@@ -1,14 +1,14 @@
- apiVersion: argoproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: myapp
   namespace: argocd
 
 spec:
-  project: default   # 👈 corrigé (2 espaces)
+  project: default
 
   source:
-    repoURL: https://github.com/your-repo/eks-terraform-gitops-platform
+    repoURL: https://github.com/guihen01/eks-terraform-gitops-platform
     targetRevision: main
     path: helm-charts/myapp
 
@@ -17,4 +17,6 @@ spec:
     namespace: default
 
   syncPolicy:
-    automated: {}       #
+    automated:
+      prune: true
+      selfHeal: true
