@@ -4,12 +4,15 @@ metadata:
   name: myapp
   namespace: argocd
 spec:
- project: default
+ project: default   # 👈 corrigé (2 espaces)
+ 
   source:
     repoURL: https://github.com/your-repo/eks-terraform-gitops-platform
     path: helm-charts/myapp
+  
   destination:
     server: https://kubernetes.default.svc
     namespace: default
+  
   syncPolicy:
     automated: {}        #
