@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: myapp
+  namespace: argocd
 spec:
   source:
     repoURL: https://github.com/your-repo/eks-terraform-gitops-platform
