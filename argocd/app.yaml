@@ -4,6 +4,7 @@ metadata:
   name: myapp
   namespace: argocd
 spec:
+ project: default
   source:
     repoURL: https://github.com/your-repo/eks-terraform-gitops-platform
     path: helm-charts/myapp
