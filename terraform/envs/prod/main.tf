@@ -25,6 +25,10 @@ module "eks" {
     }
   }
   
+  # 👇 rendre le clustr public
+  cluster_endpoint_public_access  = true
+  cluster_endpoint_private_access = true
+  
   # 👇 AJOUT IMPORTANT (IAM → Kubernetes)
   access_entries = {
   admin = {
