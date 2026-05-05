@@ -17,11 +17,12 @@ spec:
         image: nginx
         ports:
         - containerPort: 80
+        resources:
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+      limits:
+        cpu: "200m"
+        memory: "256Mi"
         
- resources:
-  requests:
-    cpu: {{ .Values.resources.requests.cpu }}
-    memory: {{ .Values.resources.requests.memory }}
-  limits:
-    cpu: {{ .Values.resources.limits.cpu }}
-    memory: {{ .Values.resources.limits.memory }}       
+  
