@@ -158,6 +158,12 @@ kubectl get applications -n argocd
 - Resilient Kubernetes workloads
 
 ---
+# screenshots
+
+![lsb-topology](screenshots/lab-topology.png)
+
+![pod-CPU](screenshots/pods-CPU.png)
+
 
 # References
 
