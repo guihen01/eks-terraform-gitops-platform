@@ -160,7 +160,9 @@ kubectl get applications -n argocd
 ---
 # screenshots
 
-![lsb-topology](screenshots/lab-topology.png)
+![LAb-topology](screenshots/Lab-topology.png)
+
+--
 
 ![pod-CPU](screenshots/pods-CPU.png)
 
